@@ -1,0 +1,11 @@
+ID;Fecha;Solicitante;Pais_code;Posicion_ID;Seniority_ID;Pais_Posicion_code;Justificativo;Usa_Aprob_1;Mail_Aprobador1;Usa_Aprob_2;Mail_Aprobador_2;Usa_Aprob_3;Mail_Aprobador_3;Asignar_a
+X1;20020101;NNNN;US;A1;B1;US;;;;;;;;
+X2;20020101;NNNN;IL;A1;B4;US;;;;;;;;
+X3;20020101;NNNN;IL;A1;B7;IL;;;;;;;;
+X4;20020101;NNNN;US;A1;B5;US;;;;;;;;
+X5;20020101;NNNN;IL;A1;B7;US;;;;;;;;
+X6;20020101;NNNN;US;A1;B1;US;;;;;;;;
+X7;20020101;NNNN;US;A1;B7;IL;;;;;;;;
+X8;20020101;NNNN;IL;A1;B7;US;;;;;;;;
+X9;20020101;NNNN;US;A1;B5;US;;;;;;;;
+X10;20020101;NNNN;US;A1;B4;IL;;;;;;;;
