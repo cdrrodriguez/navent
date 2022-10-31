@@ -1,4 +1,4 @@
-namespace sap.ui.navent;
+namespace sap.ui.people;
 
 using {
     Currency,
@@ -10,56 +10,66 @@ using {
 
 entity Posiciones : cuid, managed {
 
-    descripcion_posicion : String;
+    descPosicion : String;
 
 }
 
-entity Seniority : cuid, managed {
+entity Seniorities : cuid, managed {
 
-    descripcion_seniority : String;
+    descSeniority : String;
+
+}
+
+entity ClasesPedidos : cuid, managed {
+
+    descClasePedido : String;
 
 }
 
 entity Solicitudes : cuid, managed {
 
-    Fecha            : String;
-    Solicitante      : String;
-    Pais             : Country;
-    Posicion         : Association to Posiciones;
-    Seniority_ID     : String;
-    Pais_Posicion    : Country;
-    Justificativo    : String;
-    Usa_Aprob_1      : String;
-    Mail_Aprobador1  : String;
-    Personas_ent_1   : String;
-    Usa_Aprob_2      : String;
-    Mail_Aprobador_2 : String;
-    Personas_ent_2   : String;
-    Usa_Aprob_3      : String;
-    Mail_Aprobador_3 : String;
-    Personas_ent_3   : String;
-    Asignar_a        : String;
+    fecha          : DateTime;
+    solicitante    : Association to Usuarios;
+    rolSolicitante : String;
+    pais           : Country;
+    clasePedido    : Association to ClasesPedidos;
+    posicion       : Association to Posiciones;
+    seniority      : Association to Seniorities;
+    paisPosicion   : Country;
+    justificativo  : String;
+    pideReemplazo  : String;
+    pideDentroBP   : String;
+    pideFueraBP    : String;
+    mailAprobador1 : String;
+    estado1        : String;
+    fechaEstado1   : DateTime;
+    mailAprobador2 : String;
+    estado2        : String;
+    fechaEstado2   : DateTime;
+    mailAprobador3 : String;
+    estado3        : String;
+    fechaEstado3   : DateTime;
+    asignado       : String;
 
 }
 
-entity Personas : cuid, managed {
-
-    DNI            : String;
-    Nom_Ape        : String;
-    Mail           : String;
-    Pais           : String;
-    Posicion       : String(50);
-    Seniority      : String(50);
-    Area           : String;
-    Subarea        : String;
-    Negocio        : String;
-    Jefe           : String;
-    Vertical       : String;
-    Pide_Reemplazo : String;
-    Pide_Dentro_BP : String;
-    Pide_fuera_BP  : String;
-    Asignar_a      : String;
-    vv              : String;
-
+entity Usuarios : cuid, managed {
+    legajo         : String;
+    nombreApellido : String;
+    mail           : String;
+    pais           : Country;
+    posicion       : String;
+    area           : String;
+    subarea        : String;
+    negocio        : String;
+    jefe           : String;
+    vertical       : String;
+    pideReemplazo  : String;
+    pideDentroBP   : String;
+    pideFueraBP    : String;
+    mailAprobador1 : String;
+    mailAprobador2 : String;
+    mailAprobador3 : String;
+    asignado       : String;
 
 }
