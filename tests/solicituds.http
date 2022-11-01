@@ -1,0 +1,31 @@
+POST  http://localhost:4004/service/catalog-service/SolicitudesSrv
+Content-Type: application/json
+
+{
+
+ 
+
+    "fecha"          : 2019-07-03T12:34:56,
+    "solicitante"   : "x0577e0f6-c01a-4d15-8103-661fd073d444x",
+    "rolSolicitante" :"xx",
+    "pais"           : "xx",
+   "clasePedido"    : "xx",
+    "posicion"       : "0048413d-057f-4030-9110-563cac277867",
+    "seniority"      : "13e1f96d-c46e-42df-ae00-0e1d4a167681",
+    "paisPosicion"   : "xx",
+    "justificativo"  : "xx",
+    "pideReemplazo"  : "xx",
+    "pideDentroBP"   : "xx",
+    "pideFueraBP"    : "xx",
+    "mailAprobador1" : "xx",
+    "estado1"        : "xx",
+    "fechaEstado1"   : 2019-07-03T12:34:56,
+    "mailAprobador2" : "xx",
+    "estado2"        : "xx",
+    "fechaEstado2"   : 2019-07-03T12:34:56,
+    "mailAprobador3" : "xx",
+    "estado3"        : "xx",
+    "fechaEstado3"   : 2019-07-03T12:34:56,
+    "asignado"       : "xx"
+
+} 

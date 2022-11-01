@@ -1,0 +1,8 @@
+POST  http://localhost:4004/service/catalog-service/PosicionesSrv
+Content-Type: application/json
+
+{
+
+"descPosicion": "NUevaCesar"
+
+} 
